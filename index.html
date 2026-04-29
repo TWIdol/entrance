@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣地下偶像入口</title>
+    <style>
+        /* 基本樣式設定 */
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* 導覽列與下拉選單 */
+        nav {
+            background: #333;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* 下拉選單效果 */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* 內容區塊樣式 */
+        .container {
+          width: 90%;         /* 在小螢幕時，佔據 90% 的寬度 */
+         max-width: 1000px;  /* 但最大絕對不會超過 1000 像素 */
+         margin: 20px auto;  /* 依然保持置中 */
+         background: #fff;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .music-section {
+            margin-top: 30px;
+            padding: 15px;
+            background: #eee;
+            border-left: 5px solid #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+        .calendar-embed {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+<iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=Asia%2FTaipei"></iframe>
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li class="dropdown">
+                <a href="#">分類清單 ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">成為「歐他」</a>
+                    <a href="#">基礎可變</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                 <a href="#">台灣地下偶像列表▼</a>
+                 <div class="dropdown-content">
+                    <a herf="#">企業</a>
+                    <a href="#">自營</a>
+                </div>
+            </li>
+            <li><a href="#">資料來源感謝</a></li>
+            <li><a href="#">聯繫我</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>台灣地下偶像入口</h1>
+        
+        <img src="https://via.placeholder.com/800x400" alt="範例圖片" class="hero-image">
+
+        <p>這裡會統整台灣地下偶像資訊。包含地下偶像文化介紹、台灣現役地下偶像介紹、行事曆、活動推廣。</p>
+   <div class="calendar-embed">
+       <h3>台灣地下偶像行事曆</h3>
+       <div class="responsive-iframe-container">
+        <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=Asia%2FTaipei&showCalendars=0&showTabs=0&src=NjA0OTExY2MxOTM5NzE5Nzc3ZmU4ODA2ZWY4MTBhZDM5MmViMjYyZjNiMmRhMjEwNjNmMzlmNGFkMTI1YjcwNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5" style="border:solid 1px #777" width="500" height="500" frameborder="0" scrolling="no"></iframe>
+       </div>
+   </div>
+        <div class="music-section">
+            <h3>背景音樂播放</h3>
+            <p>點擊下方按鈕聆聽：</p>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                您的瀏覽器不支援音頻元素。
+            </audio>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 我的網站 版權所有
+    </footer>
+
+</body>
+</html>
